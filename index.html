@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Space</title>
+
+  <style>
+    body {
+      background: #c0d6f9;
+      font-family: Arial;
+    }
+
+    .container {
+      width: 900px;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+    }
+
+    .box {
+      background: white;
+      border: 2px solid blue;
+      padding: 10px;
+    }
+
+    .left {
+      width: 300px;
+    }
+
+    .right {
+      flex: 1;
+    }
+
+    .avatar {
+      width: 100%;
+      height: 200px;
+      background: url('https://i.imgur.com/yourimage.jpg') center/cover;
+      border: 2px solid black;
+    }
+
+    a {
+      color: blue;
+    }
+
+    .blink {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="box left">
+    <h1>👤 Nama Kamu</h1>
+    <p class="blink">✨ welcome to my page ✨</p>
+
+    <div class="avatar"></div>
+
+    <h3>About Me</h3>
+    <p>aku suka internet jadul, musik, dan coding 😎</p>
+
+    <h3>Interests</h3>
+    <ul>
+      <li>music</li>
+      <li>games</li>
+      <li>coding</li>
+    </ul>
+
+    <h3>Friends</h3>
+    <ul>
+      <li>teman1</li>
+      <li>teman2</li>
+    </ul>
+  </div>
+
+  <div class="box right">
+    <h2>📓 Blog</h2>
+
+    <h3>Post pertama</h3>
+    <p>ini blog aku cuy 🔥</p>
+
+    <hr>
+
+    <h3>Post kedua</h3>
+    <p>lagi belajar bikin web jadul 😄</p>
+  </div>
+
+</div>
+
+<audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+</audio>
+
+</body>
+</html>
